@@ -3,77 +3,134 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#07120e" />
+    <meta name="theme-color" content="#191917" />
     <meta
       name="description"
-      content="Читаємо документацію Playwright сторінка за сторінкою: понад 60 асинхронних відео, реальні сценарії, debugging і практичні поради."
+      content="Читаємо документацію Playwright: 7 модулів, понад 60 відео у плані. Асинхронна серія поповнюється. Програма, вартість і доступ до матеріалів."
     />
     <title>Читаємо документацію Playwright | Hot Testing</title>
     <link rel="icon" href="../favicon.png" type="image/png" />
     <link rel="stylesheet" href="../assets/styles.css" />
+    <script src="../assets/site.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Перейти до основного контенту</a>
-
+    <a class="skip-link" href="#main">До основного вмісту</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="../" aria-label="Hot Testing — головна">
-          <img src="../assets/images/logo.webp" width="900" height="507" alt="Hot Testing" />
-        </a>
+        <a class="brand" href="../" aria-label="Hot Testing — головна"
+          ><img
+            src="../assets/images/brand-mascot.webp"
+            width="880"
+            height="880"
+            alt=""
+          /><span>HOT<br />TESTING<span class="brand-dot">●</span></span></a
+        >
         <nav class="site-nav" aria-label="Головна навігація">
-          <a href="../">Головна</a>
-          <a href="../learn/" aria-current="page">Повчитись</a>
+          <a href="../learn/">Навчання</a><a href="../#community">Спільнота</a
+          ><a href="../#events">Події</a>
+          <a
+            class="nav-join"
+            href="https://t.me/hot_testing"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Я з вами <span aria-hidden="true">↗</span></a
+          >
         </nav>
+        <details class="mobile-menu">
+          <summary>Меню <span aria-hidden="true">＋</span></summary>
+          <nav aria-label="Мобільна навігація">
+            <a href="../learn/">Навчання</a><a href="../#community">Спільнота</a
+            ><a href="../#events">Події</a
+            ><a
+              href="https://t.me/hot_testing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Доєднатися до чату ↗</a
+            >
+          </nav>
+        </details>
       </div>
     </header>
 
     <main id="main">
       <section class="course-landing-hero" aria-labelledby="course-title">
-        <img
-          class="course-hero-image"
-          src="../assets/images/course-plane.webp"
-          width="1920"
-          height="838"
-          alt="Літак над лісом і ріками"
-          fetchpriority="high"
-        />
         <div class="course-hero-inner">
-          <p class="section-label">Велика асинхронна серія · понад 60 відео</p>
-          <h1 id="course-title">Читаємо документацію Playwright</h1>
-          <p class="lead">
-            Офіційні docs сторінка за сторінкою: що реально важливо, як це працює, де люди
-            помиляються і як досліджувати інструмент самостійно.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="#access">Отримати доступ</a>
-            <a class="button button-secondary" href="#plan">Подивитися план</a>
+          <div>
+            <nav class="breadcrumb" aria-label="Шлях до сторінки">
+              <a href="../">Hot Testing</a><span aria-hidden="true">/</span
+              ><a href="../learn/">Навчання</a><span aria-hidden="true">/</span
+              ><span aria-current="page">Playwright docs</span>
+            </nav>
+            <p class="section-label">Асинхронна серія / 7 модулів</p>
+            <h1 id="course-title">
+              Читаємо<br />документацію<br /><span>Playwright.</span>
+            </h1>
+            <p class="lead">
+              Офіційні docs сторінка за сторінкою. Що реально важливо, як це
+              працює, де люди помиляються — і як досліджувати інструмент
+              самостійно.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#access"
+                >Отримати доступ <span aria-hidden="true">↗</span></a
+              ><a class="button button-secondary" href="#plan"
+                >Дивитися програму <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <p class="course-status">
+              План: понад 60 відео. Серія записується й поповнюється.
+            </p>
           </div>
+          <aside class="course-cover" aria-label="Про доступ до навчання">
+            <img
+              src="../assets/images/course-reading.webp"
+              width="1280"
+              height="720"
+              alt="Читаємо документацію Playwright — Hot Testing"
+              fetchpriority="high"
+            />
+            <p>
+              У своєму темпі. З постійним доступом до випущених і майбутніх
+              відео серії та закритим чатом.
+            </p>
+          </aside>
         </div>
       </section>
+      <div class="course-subnav">
+        <nav aria-label="Розділи курсу">
+          <a href="#format">Формат</a><a href="#audience">Для кого</a
+          ><a href="#plan">Програма</a><a href="#price">Вартість</a
+          ><a href="#teacher">Викладач</a><a href="#access">Доступ ↗</a>
+        </nav>
+      </div>
 
       <section class="section two-column" aria-label="Про навчання">
         <article class="content-block">
           <p class="section-label">Що це?</p>
           <h2>Головна ідея</h2>
           <p>
-            Це велика асинхронна серія відео по Playwright. Ми буквально будемо проходити офіційні
-            docs Playwright сторінка за сторінкою і розбирати:
+            Це велика асинхронна серія відео про Playwright. Ми буквально будемо
+            проходити офіційні docs Playwright сторінка за сторінкою і
+            розбирати:
           </p>
           <ul class="check-list">
             <li>що реально важливо;</li>
             <li>як це працює;</li>
             <li>чому воно працює саме так;</li>
             <li>де люди найчастіше помиляються;</li>
-            <li>підводні камені, реальний досвід та практичні поради по кожному пункту.</li>
+            <li>
+              підводні камені, реальний досвід та практичні поради до кожного
+              пункту.
+            </li>
           </ul>
         </article>
 
         <article class="content-block">
           <p class="section-label">Навичка над навичками</p>
-          <h2>Якщо би всі читали доки — курси були би непотрібні</h2>
+          <h2>Якби всі читали доки — курси були б непотрібні</h2>
           <p>
-            Playwright має одну з найкращих документацій серед інструментів тестування. Проблема в
-            тому, що більшість людей не вчили:
+            Playwright має одну з найкращих документацій серед інструментів
+            тестування. Проблема в тому, що більшість людей не вчили:
           </p>
           <ul class="check-list">
             <li>як читати документацію;</li>
@@ -82,13 +139,13 @@
             <li>як самостійно досліджувати framework.</li>
           </ul>
           <p>
-            Це навчання саме про це. Крім того, відео можна використовувати як довідник і дивитися
-            за необхідності.
+            Це навчання саме про це. Крім того, відео можна використовувати як
+            довідник і дивитися за необхідності.
           </p>
         </article>
       </section>
 
-      <div class="format-section">
+      <div class="format-section" id="format">
         <section class="section" aria-labelledby="format-title">
           <p class="section-label">Формат</p>
           <h2 id="format-title">Без штучної зайнятості</h2>
@@ -97,11 +154,14 @@
               <span class="format-index">01</span>
               <h3>Повністю асинхронно</h3>
               <p>
-                Без зідзвонів, прив’язки до часу й календаря уроків. Більше половини студентів і так
-                дивляться відео в записі — навіщо усаджувати всіх у певні години за монітором?
+                Без зідзвонів, прив’язки до часу й календаря уроків. Більше
+                половини студентів і так дивляться відео в записі — навіщо
+                усаджувати всіх у певні години за монітором?
               </p>
               <ul>
-                <li>Відео можна дивитися з будь-якого місця і хоч перемішати.</li>
+                <li>
+                  Відео можна дивитися з будь-якого місця і хоч перемішати.
+                </li>
                 <li>Дивитися у власному темпі.</li>
                 <li>Коли і де вам зручно.</li>
                 <li>З постійним доступом до матеріалів.</li>
@@ -112,9 +172,9 @@
               <span class="format-index">02</span>
               <h3>Без домашки</h3>
               <p>
-                Якщо вам захочеться отримати підтвердження знань і красивий сертифікатик — це
-                можливо, виконавши дипломну роботу. Деталі будуть згодом, коли запис відео дійде до
-                кінця.
+                Якщо вам захочеться отримати підтвердження знань і красивий
+                сертифікатик — це можливо, виконавши дипломну роботу. Деталі
+                будуть згодом, коли запис відео дійде до кінця.
               </p>
             </article>
 
@@ -122,23 +182,25 @@
               <span class="format-index">03</span>
               <h3>Щотижневе відео</h3>
               <p>
-                Відео планується багато, більше 60, але розтягувати на рік не хочеться. Будемо
-                випускати щотижня або частіше.
+                Відео планується багато, більше 60, але розтягувати на рік не
+                хочеться. Будемо випускати щотижня або частіше.
               </p>
             </article>
           </div>
         </section>
       </div>
 
-      <section class="section" aria-labelledby="audience-title">
+      <section class="section" id="audience" aria-labelledby="audience-title">
         <p class="section-label">Для кого?</p>
-        <h2 id="audience-title">Для тих, хто хоче розуміти, а не повторювати</h2>
+        <h2 id="audience-title">
+          Для тих, хто хоче розуміти, а не повторювати
+        </h2>
         <div class="audience-grid">
           <article class="audience-card">
             <h3>QA Engineers</h3>
             <p>
-              Для тих, хто хоче перейти від «manual + трохи automation» до впевненого розуміння
-              всіх тонкощів Playwright.
+              Для тих, хто хоче перейти від «manual + трохи automation» до
+              впевненого розуміння всіх тонкощів Playwright.
             </p>
           </article>
           <article class="audience-card">
@@ -154,82 +216,6 @@
         </div>
       </section>
 
-      <div class="pricing-section">
-        <section class="section" aria-labelledby="price-title">
-          <p class="section-label">Вартість і мета</p>
-          <h2 id="price-title">Навчання, яке допомагає</h2>
-          <div class="pricing-grid">
-            <div class="price-card">
-              <div class="price-row">
-                <span class="price-label">Регулярна ціна</span>
-                <strong class="price-value">10 000 грн</strong>
-              </div>
-              <div class="price-row">
-                <span class="price-label">Для тих, хто в Україні</span>
-                <strong class="price-value">8 000 грн</strong>
-              </div>
-              <div class="price-row">
-                <span class="price-label">Для ветеранів, ДПСУ та ДСНС</span>
-                <strong class="price-value price-free">Безкоштовно</strong>
-              </div>
-            </div>
-
-            <div class="mission-card">
-              <h3>Усі кошти з навчання підуть на підтримку наших підрозділів</h3>
-              <ul>
-                <li>бойового підрозділу прикордонників;</li>
-                <li>бригади «Рубіж», яка зараз доукомплектовується технікою;</li>
-                <li>підрозділу БПЛА на Сумщині, яким керує наш колега-автоматизатор;</li>
-                <li>«Азову» та інших підрозділів — усі звіти будуть опубліковані.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <section class="section access-grid" id="access" aria-labelledby="access-title">
-        <div>
-          <p class="section-label">Як отримати доступ?</p>
-          <h2 id="access-title">Три прості кроки</h2>
-          <ol class="access-steps">
-            <li>
-              <strong>Зробіть донат</strong>
-              Використайте постійно діючу банку для переказів за навчання.
-            </li>
-            <li>
-              <strong>Надішліть підтвердження</strong>
-              Донат із monobank може надати доступ автоматично. В інших випадках надішліть
-              підтвердження в Telegram.
-            </li>
-            <li>
-              <strong>Навчайтеся</strong>
-              Отримайте вже випущені й усі майбутні відео циклу, а також закритий чат для
-              обговорень та анонсів.
-            </li>
-          </ol>
-        </div>
-
-        <div class="bank-panel">
-          <h3>Постійно діюча банка для донатів за навчання</h3>
-          <p>Номер картки банки:</p>
-          <div class="bank-number" aria-label="Номер картки банки">5375 4112 1389 5175</div>
-          <p>
-            За додатковими реквізитами — інші банки, крипта, PayPal тощо — звертайтеся в особисті
-            повідомлення.
-          </p>
-          <a
-            class="button"
-            href="https://send.monobank.ua/jar/AJrFUQ9hrT"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Відкрити банку monobank</a>
-          <p>
-            Для підтвердження або безкоштовного доступу для ветеранів, ДПСУ та ДСНС:
-            <a href="https://t.me/xotabu4" target="_blank" rel="noopener noreferrer">@xotabu4</a>.
-          </p>
-        </div>
-      </section>
-
       <div class="curriculum-section" id="plan">
         <section class="section" aria-labelledby="plan-title">
           <div class="curriculum-heading">
@@ -238,8 +224,8 @@
               <h2 id="plan-title">План відео</h2>
             </div>
             <p>
-              Від першого запуску до debugging, API, CI, артефактів і нішевих сценаріїв. Відкрийте
-              модуль, щоб переглянути теми.
+              Від першого запуску до debugging, API, CI, артефактів і нішевих
+              сценаріїв. Відкрийте модуль, щоб переглянути теми.
             </p>
           </div>
 
@@ -247,13 +233,62 @@
             <details class="module" open>
               <summary>Модуль 1. Getting Started</summary>
               <ol class="module-list">
-                <li><a href="https://playwright.dev/docs/intro" target="_blank" rel="noopener noreferrer">Installation</a></li>
-                <li><a href="https://playwright.dev/docs/writing-tests" target="_blank" rel="noopener noreferrer">Writing tests</a></li>
-                <li><a href="https://playwright.dev/docs/running-tests" target="_blank" rel="noopener noreferrer">Running and debugging tests</a></li>
-                <li><a href="https://playwright.dev/docs/getting-started-vscode" target="_blank" rel="noopener noreferrer">VS Code</a></li>
-                <li><a href="https://playwright.dev/docs/codegen-intro" target="_blank" rel="noopener noreferrer">Generating tests</a></li>
-                <li><a href="https://playwright.dev/docs/trace-viewer-intro" target="_blank" rel="noopener noreferrer">Trace viewer (intro)</a></li>
-                <li><a href="https://playwright.dev/docs/ci-intro" target="_blank" rel="noopener noreferrer">Setting up CI</a></li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/intro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Installation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/writing-tests"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Writing tests</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/running-tests"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Running and debugging tests</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/getting-started-vscode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >VS Code</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/codegen-intro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Generating tests</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/trace-viewer-intro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Trace viewer (intro)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/ci-intro"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Setting up CI</a
+                  >
+                </li>
               </ol>
             </details>
 
@@ -261,47 +296,221 @@
               <summary>Модуль 2. Ядро API — без цього не існує</summary>
               <ol class="module-list">
                 <li>
-                  <a href="https://playwright.dev/docs/locators" target="_blank" rel="noopener noreferrer">Locators</a>
-                  <span class="lesson-note">· 2 відео: built-in locators; chaining, filtering, has/hasNot</span>
+                  <a
+                    href="https://playwright.dev/docs/locators"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Locators</a
+                  >
+                  <span class="lesson-note"
+                    >· 2 відео: built-in locators; chaining, filtering,
+                    has/hasNot</span
+                  >
                 </li>
-                <li><a href="https://playwright.dev/docs/other-locators" target="_blank" rel="noopener noreferrer">Other locators</a> — CSS, XPath, layout-based</li>
-                <li><a href="https://playwright.dev/docs/actionability" target="_blank" rel="noopener noreferrer">Auto-waiting (actionability)</a></li>
-                <li><a href="https://playwright.dev/docs/input" target="_blank" rel="noopener noreferrer">Actions</a> — click, fill, hover, keyboard, mouse</li>
                 <li>
-                  <a href="https://playwright.dev/docs/test-assertions" target="_blank" rel="noopener noreferrer">Assertions</a>
-                  <span class="lesson-note">· 2 відео: web-first; generic, soft і custom matchers</span>
+                  <a
+                    href="https://playwright.dev/docs/other-locators"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Other locators</a
+                  >
+                  — CSS, XPath, layout-based
                 </li>
-                <li><a href="https://playwright.dev/docs/pages" target="_blank" rel="noopener noreferrer">Pages</a></li>
-                <li><a href="https://playwright.dev/docs/browser-contexts" target="_blank" rel="noopener noreferrer">Isolation (browser contexts)</a></li>
-                <li><a href="https://playwright.dev/docs/best-practices" target="_blank" rel="noopener noreferrer">Best Practices</a></li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/actionability"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Auto-waiting (actionability)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/input"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Actions</a
+                  >
+                  — click, fill, hover, keyboard, mouse
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-assertions"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Assertions</a
+                  >
+                  <span class="lesson-note"
+                    >· 2 відео: web-first; generic, soft і custom matchers</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/pages"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Pages</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/browser-contexts"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Isolation (browser contexts)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/best-practices"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Best Practices</a
+                  >
+                </li>
               </ol>
             </details>
 
             <details class="module">
               <summary>Модуль 3. Test runner — повсякденна робота</summary>
               <ol class="module-list">
-                <li><a href="https://playwright.dev/docs/test-cli" target="_blank" rel="noopener noreferrer">Command line</a></li>
                 <li>
-                  <a href="https://playwright.dev/docs/test-configuration" target="_blank" rel="noopener noreferrer">Configuration</a>
-                  <span class="lesson-note">· 2 відео: базові опції й projects; reporters і retries</span>
+                  <a
+                    href="https://playwright.dev/docs/test-cli"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Command line</a
+                  >
                 </li>
-                <li><a href="https://playwright.dev/docs/test-use-options" target="_blank" rel="noopener noreferrer">Configuration (use)</a></li>
-                <li><a href="https://playwright.dev/docs/test-projects" target="_blank" rel="noopener noreferrer">Projects</a></li>
                 <li>
-                  <a href="https://playwright.dev/docs/test-fixtures" target="_blank" rel="noopener noreferrer">Fixtures</a>
-                  <span class="lesson-note">· 2 відео: вбудовані та кастомні; auto, scope, override і worker-scoped</span>
+                  <a
+                    href="https://playwright.dev/docs/test-configuration"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Configuration</a
+                  >
+                  <span class="lesson-note"
+                    >· 2 відео: базові опції й projects; reporters і
+                    retries</span
+                  >
                 </li>
-                <li><a href="https://playwright.dev/docs/test-timeouts" target="_blank" rel="noopener noreferrer">Timeouts</a></li>
-                <li><a href="https://playwright.dev/docs/test-retries" target="_blank" rel="noopener noreferrer">Retries</a></li>
-                <li><a href="https://playwright.dev/docs/test-annotations" target="_blank" rel="noopener noreferrer">Annotations</a> — test.skip, fixme, fail, slow, tag</li>
-                <li><a href="https://playwright.dev/docs/test-reporters" target="_blank" rel="noopener noreferrer">Reporters</a></li>
-                <li><a href="https://playwright.dev/docs/test-ui-mode" target="_blank" rel="noopener noreferrer">UI Mode</a></li>
-                <li><a href="https://playwright.dev/docs/test-parallel" target="_blank" rel="noopener noreferrer">Parallelism</a></li>
-                <li><a href="https://playwright.dev/docs/test-sharding" target="_blank" rel="noopener noreferrer">Sharding</a></li>
-                <li><a href="https://playwright.dev/docs/test-webserver" target="_blank" rel="noopener noreferrer">Web server</a></li>
-                <li><a href="https://playwright.dev/docs/test-parameterize" target="_blank" rel="noopener noreferrer">Parameterize tests</a></li>
-                <li><a href="https://playwright.dev/docs/test-global-setup-teardown" target="_blank" rel="noopener noreferrer">Global setup and teardown</a></li>
-                <li><a href="https://playwright.dev/docs/test-typescript" target="_blank" rel="noopener noreferrer">TypeScript</a></li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-use-options"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Configuration (use)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-projects"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-fixtures"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Fixtures</a
+                  >
+                  <span class="lesson-note"
+                    >· 2 відео: вбудовані та кастомні; auto, scope, override і
+                    worker-scoped</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-timeouts"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Timeouts</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-retries"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Retries</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-annotations"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Annotations</a
+                  >
+                  — test.skip, fixme, fail, slow, tag
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-reporters"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Reporters</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-ui-mode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >UI Mode</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-parallel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Parallelism</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-sharding"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Sharding</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-webserver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Web server</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-parameterize"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Parameterize tests</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-global-setup-teardown"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Global setup and teardown</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/test-typescript"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >TypeScript</a
+                  >
+                </li>
               </ol>
             </details>
 
@@ -309,24 +518,119 @@
               <summary>Модуль 4. Реальні сценарії</summary>
               <ol class="module-list">
                 <li>
-                  <a href="https://playwright.dev/docs/auth" target="_blank" rel="noopener noreferrer">Authentication</a>
-                  <span class="lesson-note">· 2 відео: storageState і login flow; multi-user, ролі, OAuth та API-based login</span>
+                  <a
+                    href="https://playwright.dev/docs/auth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Authentication</a
+                  >
+                  <span class="lesson-note"
+                    >· 2 відео: storageState і login flow; multi-user, ролі,
+                    OAuth та API-based login</span
+                  >
                 </li>
                 <li>
-                  <a href="https://playwright.dev/docs/network" target="_blank" rel="noopener noreferrer">Network</a>
-                  <span class="lesson-note">· 2 відео: моніторинг; route, abort, modify та HAR</span>
+                  <a
+                    href="https://playwright.dev/docs/network"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Network</a
+                  >
+                  <span class="lesson-note"
+                    >· 2 відео: моніторинг; route, abort, modify та HAR</span
+                  >
                 </li>
-                <li><a href="https://playwright.dev/docs/mock" target="_blank" rel="noopener noreferrer">Mock APIs</a></li>
-                <li><a href="https://playwright.dev/docs/mock-browser-apis" target="_blank" rel="noopener noreferrer">Mock browser APIs</a></li>
-                <li><a href="https://playwright.dev/docs/api-testing" target="_blank" rel="noopener noreferrer">API testing</a> — request fixture, інтеграційні тести бекенду</li>
-                <li><a href="https://playwright.dev/docs/navigations" target="_blank" rel="noopener noreferrer">Navigations</a></li>
-                <li><a href="https://playwright.dev/docs/pom" target="_blank" rel="noopener noreferrer">Page object models</a></li>
-                <li><a href="https://playwright.dev/docs/dialogs" target="_blank" rel="noopener noreferrer">Dialogs</a></li>
-                <li><a href="https://playwright.dev/docs/downloads" target="_blank" rel="noopener noreferrer">Downloads</a></li>
-                <li><a href="https://playwright.dev/docs/frames" target="_blank" rel="noopener noreferrer">Frames (iframes)</a></li>
-                <li><a href="https://playwright.dev/docs/emulation" target="_blank" rel="noopener noreferrer">Emulation</a> — viewport, geolocation, locale, timezone, color scheme</li>
-                <li><a href="https://playwright.dev/docs/browsers" target="_blank" rel="noopener noreferrer">Browsers</a> — channels, headed/headless, install</li>
-                <li><a href="https://playwright.dev/docs/debug" target="_blank" rel="noopener noreferrer">Debugging Tests</a></li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/mock"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Mock APIs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/mock-browser-apis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Mock browser APIs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/api-testing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >API testing</a
+                  >
+                  — request fixture, інтеграційні тести бекенду
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/navigations"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Navigations</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/pom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Page object models</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/dialogs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Dialogs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/downloads"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Downloads</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/frames"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Frames (iframes)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/emulation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Emulation</a
+                  >
+                  — viewport, geolocation, locale, timezone, color scheme
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/browsers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Browsers</a
+                  >
+                  — channels, headed/headless, install
+                </li>
+                <li>
+                  <a
+                    href="https://playwright.dev/docs/debug"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Debugging Tests</a
+                  >
+                </li>
               </ol>
             </details>
 
@@ -335,7 +639,13 @@
               <ol class="module-list">
                 <li>Screenshots</li>
                 <li>Videos</li>
-                <li>Trace viewer (deep dive) <span class="lesson-note">· 2 відео: читання трейсу; інтеграція в CI та аналіз падінь</span></li>
+                <li>
+                  Trace viewer (deep dive)
+                  <span class="lesson-note"
+                    >· 2 відео: читання трейсу; інтеграція в CI та аналіз
+                    падінь</span
+                  >
+                </li>
                 <li>Visual comparisons (toHaveScreenshot)</li>
                 <li>Snapshot testing (ARIA)</li>
                 <li>Test generator (Codegen)</li>
@@ -365,7 +675,10 @@
               <ol class="module-list">
                 <li>Agents</li>
                 <li>Release notes / Canary releases — як читати</li>
-                <li>Migration — Protractor, Puppeteer, Cypress: окремий мініблок для тих, хто мігрує</li>
+                <li>
+                  Migration — Protractor, Puppeteer, Cypress: окремий мініблок
+                  для тих, хто мігрує
+                </li>
                 <li>Integrations — Docker і контейнери</li>
                 <li>Supported languages</li>
               </ol>
@@ -374,7 +687,109 @@
         </section>
       </div>
 
-      <section class="section instructor-layout" aria-labelledby="teacher-title">
+      <div class="pricing-section" id="price">
+        <section class="section" aria-labelledby="price-title">
+          <p class="section-label">Вартість і мета</p>
+          <h2 id="price-title">Навчання, яке допомагає</h2>
+          <div class="pricing-grid">
+            <div class="price-card">
+              <div class="price-row">
+                <span class="price-label">Регулярна ціна</span>
+                <strong class="price-value">10 000 грн</strong>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Для тих, хто в Україні</span>
+                <strong class="price-value">8 000 грн</strong>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Для ветеранів, ДПСУ та ДСНС</span>
+                <strong class="price-value price-free">Безкоштовно</strong>
+              </div>
+            </div>
+
+            <div class="mission-card">
+              <h3>
+                Усі кошти з навчання підуть на підтримку наших підрозділів
+              </h3>
+              <ul>
+                <li>бойового підрозділу прикордонників;</li>
+                <li>
+                  бригади «Рубіж», яка зараз доукомплектовується технікою;
+                </li>
+                <li>
+                  підрозділу БПЛА на Сумщині, яким керує наш
+                  колега-автоматизатор;
+                </li>
+                <li>
+                  «Азову» та інших підрозділів — усі звіти будуть опубліковані.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section
+        class="section access-grid"
+        id="access"
+        aria-labelledby="access-title"
+      >
+        <div>
+          <p class="section-label">Як отримати доступ?</p>
+          <h2 id="access-title">Три прості кроки</h2>
+          <ol class="access-steps">
+            <li>
+              <strong>Зробіть донат</strong>
+              Використайте постійно діючу банку для переказів за навчання.
+            </li>
+            <li>
+              <strong>Надішліть підтвердження</strong>
+              Донат із monobank може надати доступ автоматично. В інших випадках
+              надішліть підтвердження в Telegram.
+            </li>
+            <li>
+              <strong>Навчайтеся</strong>
+              Отримайте вже випущені й усі майбутні відео циклу, а також
+              закритий чат для обговорень та анонсів.
+            </li>
+          </ol>
+        </div>
+
+        <div class="bank-panel">
+          <h3>Постійно діюча банка для донатів за навчання</h3>
+          <p>Номер картки банки:</p>
+          <div class="bank-number" aria-label="Номер картки банки">
+            5375 4112 1389 5175
+          </div>
+          <p>
+            За додатковими реквізитами — інші банки, крипта, PayPal тощо —
+            звертайтеся в особисті повідомлення.
+          </p>
+          <a
+            class="button"
+            href="https://send.monobank.ua/jar/AJrFUQ9hrT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Відкрити банку monobank</a
+          >
+          <p>
+            Для підтвердження або безкоштовного доступу для ветеранів, ДПСУ та
+            ДСНС:
+            <a
+              href="https://t.me/xotabu4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@xotabu4</a
+            >.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section instructor-layout"
+        id="teacher"
+        aria-labelledby="teacher-title"
+      >
         <aside class="instructor-aside">
           <div class="instructor-photo">
             <img
@@ -388,44 +803,90 @@
           </div>
           <p class="instructor-name">Олександр Хотемський</p>
           <p class="instructor-latin">Oleksandr Khotemskyi</p>
-          <a href="https://xotabu4.github.io/" target="_blank" rel="noopener noreferrer">xotabu4.github.io</a>
+          <a
+            href="https://xotabu4.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >xotabu4.github.io</a
+          >
         </aside>
 
         <div class="instructor-copy">
           <p class="section-label">Викладач</p>
-          <h2 id="teacher-title">15+ років досвіду в автоматизації тестування</h2>
+          <h2 id="teacher-title">
+            15+ років досвіду в автоматизації тестування
+          </h2>
           <p>
-            Основні напрямки моєї роботи — розробка тестів, підходів, архітектури та інструментарію
-            для автоматизації різних рівнів і видів тестування. Працював на багатьох проєктах із
-            JavaScript, TypeScript, Java та Python. Наразі — Engineering Manager / QA practice lead
-            у <a href="https://doxy.me/" target="_blank" rel="noopener noreferrer">Doxy.me</a>.
+            Основні напрямки моєї роботи — розробка тестів, підходів,
+            архітектури та інструментарію для автоматизації різних рівнів і
+            видів тестування. Працював на багатьох проєктах із JavaScript,
+            TypeScript, Java та Python. Наразі — Engineering Manager / QA
+            practice lead у
+            <a href="https://doxy.me/" target="_blank" rel="noopener noreferrer"
+              >Doxy.me</a
+            >.
           </p>
           <ul>
             <li>Навчив більше 1000 студентів на власних курсах і воркшопах.</li>
-            <li>Веду канал на <a href="https://www.youtube.com/@HOTtesting" target="_blank" rel="noopener noreferrer">YouTube</a>.</li>
-            <li>Розвиваю спільноту <a href="https://t.me/js_for_testing" target="_blank" rel="noopener noreferrer">Hot Testing</a>.</li>
-            <li>Переможець і суддя <a href="https://ua.devchallenge.it/" target="_blank" rel="noopener noreferrer">Ukrainian Dev Challenge</a>.</li>
-            <li>Більше 100 доповідей на IT-конференціях про тестування, автоматизацію та побудову процесів.</li>
+            <li>
+              Веду канал на
+              <a
+                href="https://www.youtube.com/@HOTtesting"
+                target="_blank"
+                rel="noopener noreferrer"
+                >YouTube</a
+              >.
+            </li>
+            <li>
+              Розвиваю спільноту
+              <a
+                href="https://t.me/hot_testing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Hot Testing</a
+              >.
+            </li>
+            <li>
+              Переможець і суддя
+              <a
+                href="https://ua.devchallenge.it/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ukrainian Dev Challenge</a
+              >.
+            </li>
+            <li>
+              Більше 100 доповідей на IT-конференціях про тестування,
+              автоматизацію та побудову процесів.
+            </li>
           </ul>
 
           <blockquote class="quote">
             <p>
-              “I had the pleasure of collaborating with Oleksandr for two years while he was an
-              active ambassador of the emerging Microsoft Playwright project. Of all the
-              ambassadors I’ve worked with, Oleksandr is among the most experienced and
-              knowledgeable world-class experts in the test automation area. During our
-              collaboration, Oleksandr was actively educating the community on QA &amp; automation,
-              sharing his experience, providing quality feedback back to the Playwright project.”
+              “I had the pleasure of collaborating with Oleksandr for two years
+              while he was an active ambassador of the emerging Microsoft
+              Playwright project. Of all the ambassadors I’ve worked with,
+              Oleksandr is among the most experienced and knowledgeable
+              world-class experts in the test automation area. During our
+              collaboration, Oleksandr was actively educating the community on
+              QA &amp; automation, sharing his experience, providing quality
+              feedback back to the Playwright project.”
             </p>
             <cite>
-              Pavel Feldman, Technical Fellow (Corporate Vice President) at Microsoft Corporation,
-              creator of Microsoft Playwright
+              Pavel Feldman, Technical Fellow (Corporate Vice President) at
+              Microsoft Corporation, creator of Microsoft Playwright
             </cite>
           </blockquote>
 
           <div class="contact-strip">
             <p>Є питання? Напишіть у Telegram.</p>
-            <a class="button" href="https://t.me/xotabu4" target="_blank" rel="noopener noreferrer">@xotabu4</a>
+            <a
+              class="button"
+              href="https://t.me/xotabu4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@xotabu4</a
+            >
           </div>
         </div>
       </section>
@@ -433,8 +894,26 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <span class="footer-mark">Hot Testing</span>
-        <p>© 2026 Усі права, можливо захищені</p>
+        <a class="footer-mark" href="../">HOT TESTING</a>
+        <p>© 2026. Зроблено своїми для своїх.</p>
+        <div class="footer-links">
+          <a
+            href="https://t.me/hottestingchannel"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Новини в Telegram ↗</a
+          ><a
+            href="https://www.youtube.com/@HOTtesting"
+            target="_blank"
+            rel="noopener noreferrer"
+            >YouTube ↗</a
+          ><a
+            href="https://t.me/xotabu4"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Контакт ↗</a
+          >
+        </div>
       </div>
     </footer>
   </body>

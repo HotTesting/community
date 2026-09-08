@@ -4,35 +4,86 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#fff7ec" />
-    <title>Сторінку не знайдено | Hot Testing</title>
-    <link rel="icon" href="./favicon.png" type="image/png" />
-    <link rel="stylesheet" href="./assets/styles.css" />
+    <meta name="robots" content="noindex" />
+    <title>404 — тут порожньо | Hot Testing</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 2rem;
+        background: #fff7ec;
+        color: #191917;
+        font:
+          1rem/1.65 Arial,
+          sans-serif;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        max-width: 42rem;
+      }
+      p {
+        margin: 1rem 0;
+      }
+      h1 {
+        font-size: clamp(5rem, 22vw, 10rem);
+        line-height: 1;
+        margin: 1rem 0;
+        color: #df1908;
+        letter-spacing: -0.06em;
+      }
+      h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+        line-height: 1.2;
+      }
+      .brand {
+        font-weight: 900;
+        letter-spacing: 0.06em;
+      }
+      .button {
+        display: inline-block;
+        padding: 0.9rem 1.4rem;
+        margin-top: 1rem;
+        background: #191917;
+        color: #fff7ec;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .button:hover {
+        background: #df1908;
+      }
+      :focus-visible {
+        outline: 3px solid #df1908;
+        outline-offset: 5px;
+      }
+    </style>
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="./" aria-label="Hot Testing — головна">
-          <img src="./assets/images/logo.webp" width="900" height="507" alt="Hot Testing" />
-        </a>
-        <nav class="site-nav" aria-label="Головна навігація">
-          <a href="./">Головна</a>
-          <a href="./learn/">Повчитись</a>
-        </nav>
-      </div>
-    </header>
-    <main class="section not-found">
-      <div>
-        <p class="section-label">404</p>
-        <h1>Не знайшли</h1>
-        <p class="lead">Цієї сторінки немає. Може, вона пішла читати документацію.</p>
-        <a class="button" href="./">На головну</a>
-      </div>
+    <main id="main">
+      <p class="brand">HOT TESTING</p>
+      <h1>404</h1>
+      <h2>Оцей тест таки впав.</h2>
+      <p>Такої сторінки немає. Курси й свої люди — на головній.</p>
+      <a
+        class="button"
+        id="home-link"
+        href="https://hottesting.github.io/community/"
+        >Повернутися на головну ↗</a
+      >
     </main>
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <span class="footer-mark">Hot Testing</span>
-        <p>© 2026 Усі права, можливо захищені</p>
-      </div>
-    </footer>
+    <script>
+      // GitHub serves this document at the missing URL, including nested paths.
+      // Keep it self-contained; select the known project base only on github.io.
+      const base =
+        location.hostname.toLowerCase() === "hottesting.github.io"
+          ? "/community/"
+          : "/";
+      if (location.protocol !== "file:")
+        document.getElementById("home-link").href = base;
+    </script>
   </body>
 </html>
